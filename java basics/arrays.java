@@ -6,7 +6,6 @@
 //     numbers[i] = numbers[i] +1;
 //     }
 //     }
-
 //     //this function for search number
 //     public static int linearSearch(int num[], int key) {
 //         for (int i = 0; i < num.length; i++) {
@@ -16,7 +15,6 @@
 //         }
 //         return -1;
 //     }
-
 //     //this function for search food in food list
 //     public static int foodsearch(String food[], String key){
 //         for(int i =0; i<food.length;i++){
@@ -26,10 +24,8 @@
 //         }
 //         return -1;
 //     }
-
 //     public static void main(String args[]) {
 //         // int number[] = {}
-
 //         //this code for find the food items in list
 //         Scanner sc = new Scanner(System.in);
 //         String food[] = {"dosa", "chilli patato", "pizza","burger", "samosa", "spring roll", "momos","pasta", "maggi"};
@@ -41,7 +37,6 @@
 //             System.out.println("key at index : " + index);
 //         }
 //         sc.close();
-
 //         // this code for find the index of input numbers
 //         // Scanner sc = new Scanner(System.in);
 //         int num[] = { 2,4,6,8,10,12,14,16,18,20,22,24,26};
@@ -55,7 +50,6 @@
 //         System.out.println("Key at index : " + index );
 //         }
 //         sc.close();
-
 //         // this code for print marks
 //         int marks[] = new int[50];
 //         Scanner scn = new Scanner(System.in);
@@ -158,25 +152,52 @@ public class arrays {
     }
 
     //this code for find max num by using kadane's algo
-     public static void kadanes(int num[]){
+    public static void kadanes(int num[]) {
         int currsum = 0;
         int maxsum = Integer.MIN_VALUE;
-        for(int i=0; i<num.length; i++){
+        for (int i = 0; i < num.length; i++) {
             currsum = currsum + num[i];
-            if(currsum<0){
+            if (currsum < 0) {
                 currsum = 0;
             }
-            maxsum = Math.max(currsum,maxsum);
+            maxsum = Math.max(currsum, maxsum);
         }
         System.out.println("sum of subarray is : " + maxsum);
     }
 
+    public static int trapperWater(int height[]) {
+        //for find leftmax boundry
+        int n = height.length;
+        int leftmax[] = new int[n];
+        leftmax[0] = height[0];
+        for (int i = 1; i < n; i++) {
+            leftmax[i] = Math.max(height[i], leftmax[i - 1]);
+        }
+        //for find rightmax boundry
+        int rightmax[] = new int[n];
+        rightmax[n - 1] = height[n - 1];
+        for (int i = n - 2; i >= 0; i--) {
+            rightmax[i] = Math.max(height[i], rightmax[i + 1]);
+        }
+        //loops
+        int trappedWater = 0;
+        for (int i = 0; i < n; i++) {
+            //find waterlevel = min(leftmax boundry, rightmax boundry)
+            int waterlevel = Math.min(leftmax[i], rightmax[i]);
+            //find trapped water = waterlevel - height[i]
+            trappedWater += waterlevel - height[i];
+        }
+        return trappedWater;
+    }
+
     public static void main(String args[]) {
 
+        //this code for find trapped water in bars
+        int height[] = {4, 2, 0, 6, 3, 2, 5};
+        System.out.println(trapperWater(height));
 
-
-        int num[] = {-2,-3,4,-1,-2,1,5,-3};
-        kadanes(num);
+        // int num[] = {-2, -3, 4, -1, -2, 1, 5, -3};
+        // kadanes(num);
         // this code for finding max num
         // int arr[] = { 2, 45, 67, 89, 3, 4, 856, 32, 789 };
         // int max = Integer.MIN_VALUE;
@@ -194,19 +215,15 @@ public class arrays {
 
         // System.out.println("first max value : " + max);
         // System.out.print("second max value is : " + smax);
-
         // this code for print mas sum of sub array
         // int numbers[] = {1,-2,6,-1,3};
         // maxsubarrays(numbers);
-
         // this code for print sub array
         // int numbers[] = {2,4,6,8,10};
         // printsubarrays(numbers);
-
         // this code for print pairs of array
         // int num1[] = {2,4,6,8,10};
         // printpairs(num1);
-
         // this code for reverse the array
         // int num[] = { 2, 4, 6, 8, 10, 12, 14, 16 };
         // reverse(num);
@@ -214,7 +231,6 @@ public class arrays {
         // System.out.print(num[i] + " ");
         // }
         // System.out.println();
-
         // this code for binary search
         // Scanner sc = new Scanner(System.in);
         // int key = sc.nextInt();

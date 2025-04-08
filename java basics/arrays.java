@@ -157,28 +157,43 @@ public class arrays {
         System.out.println("max sum  : " + maxsum);
     }
 
+    //this code for find max num by using kadane's algo
+     public static void kadanes(int num[]){
+        int currsum = 0;
+        int maxsum = Integer.MIN_VALUE;
+        for(int i=0; i<num.length; i++){
+            currsum = currsum + num[i];
+            if(currsum<0){
+                currsum = 0;
+            }
+            maxsum = Math.max(currsum,maxsum);
+        }
+        System.out.println("sum of subarray is : " + maxsum);
+    }
+
     public static void main(String args[]) {
 
 
 
-        
+        int num[] = {-2,-3,4,-1,-2,1,5,-3};
+        kadanes(num);
         // this code for finding max num
-        int arr[] = { 2, 45, 67, 89, 3, 4, 856, 32, 789 };
-        int max = Integer.MIN_VALUE;
-        int smax = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-            }
-        }
-        for(int i = 0; i < arr.length; i++){
-            if(smax< arr[i] && arr[i] != max){
-                smax = arr[i];
-            }
-        }
+        // int arr[] = { 2, 45, 67, 89, 3, 4, 856, 32, 789 };
+        // int max = Integer.MIN_VALUE;
+        // int smax = Integer.MIN_VALUE;
+        // for (int i = 0; i < arr.length; i++) {
+        //     if (max < arr[i]) {
+        //         max = arr[i];
+        //     }
+        // }
+        // for(int i = 0; i < arr.length; i++){
+        //     if(smax< arr[i] && arr[i] != max){
+        //         smax = arr[i];
+        //     }
+        // }
 
-        System.out.println("first max value : " + max);
-        System.out.print("second max value is : " + smax);
+        // System.out.println("first max value : " + max);
+        // System.out.print("second max value is : " + smax);
 
         // this code for print mas sum of sub array
         // int numbers[] = {1,-2,6,-1,3};

@@ -414,6 +414,7 @@ public class basics {
         int hight = scn.nextInt();
         System.out.println("Enter your hight stars : " + hight);
         int width = scn.nextInt();
+        
         System.out.println("Enter your width stars : " + width);
         for (int row = 0; row < hight; row++) {
             for (int col = 0; col < width; col++) {
@@ -425,6 +426,6 @@ public class basics {
             }
             System.out.println("");
         }
-        scn.close();
+       scn.close();
     }
 }

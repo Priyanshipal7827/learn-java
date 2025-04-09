@@ -190,32 +190,49 @@ public class arrays {
         return trappedWater;
     }
 
-
-     //this code for buy and sell stock
-     public static int buyandsellstock(int prices[]){
+    //this code for buy and sell stock
+    public static int buyandsellstock(int prices[]) {
         int buyprice = Integer.MAX_VALUE;
         int maxprofit = 0;
-        for(int i=0; i<prices.length; i++){
-            if(buyprice < prices[i]){
+        for (int i = 0; i < prices.length; i++) {
+            if (buyprice < prices[i]) {
                 int profit = prices[i] - buyprice;
                 maxprofit = Math.max(maxprofit, profit);
-            }else{
+            } else {
                 buyprice = prices[i];
             }
         }
         return maxprofit;
-     }
+    }
 
+    //this code for find the water in the tawars
+    public static int findwater(int height[]){
+        int n = height.length;
+        int maxarea = 0;
+        for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                int h = Math.min(height[i], height[j]);
+                int w = j-i;
+            
+                int currarea = h*w;
+                maxarea = Math.max(maxarea, currarea);
+            }
+        }
+        return maxarea;
+
+    }
     public static void main(String args[]) {
 
-         //this code for buy and sell stock
-        int prices[] = {7,1,5,3,6,4};
-        System.out.println(buyandsellstock(prices));
+        //this code for find the water in the tawars
+        int heigth[] = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        System.out.println(findwater(heigth));
 
+        //this code for buy and sell stock
+        // int prices[] = {7,1,5,3,6,4};
+        // System.out.println(buyandsellstock(prices));
         //this code for find trapped water in bars
         // int height[] = {4, 2, 0, 6, 3, 2, 5};
         // System.out.println(trapperWater(height));
-
         // int num[] = {-2, -3, 4, -1, -2, 1, 5, -3};
         // kadanes(num);
         // this code for finding max num
@@ -232,7 +249,6 @@ public class arrays {
         //         smax = arr[i];
         //     }
         // }
-
         // System.out.println("first max value : " + max);
         // System.out.print("second max value is : " + smax);
         // this code for print mas sum of sub array

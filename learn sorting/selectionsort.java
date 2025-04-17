@@ -1,5 +1,5 @@
 public class selectionsort{
-    public static void selectionsort(int arr[]){
+    public static void selectionSort(int arr[]){
         int n = arr.length;
         for(int i=0; i<n-1; i++){
             int minpos = i;
@@ -15,7 +15,7 @@ public class selectionsort{
     }
     public static void main(String args[]){
         int arr[] = {5, 4, 1, 3, 2};
-        selectionsort(arr);
+        selectionSort(arr);
 
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");

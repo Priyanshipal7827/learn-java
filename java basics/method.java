@@ -1,6 +1,6 @@
 // import java.util.*;
 
-public class function {
+public class method{
     public static int printHello() {
         System.out.println("hello priyanshi");
         System.out.println("hello prianshi");

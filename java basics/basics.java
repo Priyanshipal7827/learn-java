@@ -1,6 +1,7 @@
 import java.util.*;
+
 public class basics {
-    public static void main(String arg[]){
+    public static void main(String arg[]) {
         // print statement
         System.out.println("Hello world");
         System.out.println("Prianshi pal");
@@ -20,7 +21,7 @@ public class basics {
         System.out.println(name);
         // data types
         // data types are two types
-        // 1 is primitive data  type
+        // 1 is primitive data type
         // byte
         // short
         // int
@@ -33,12 +34,12 @@ public class basics {
         // 2 is non primitive data types
         // String
         // array
-        // class 
+        // class
         // object
         // interface
         // java is a types language
         byte B = 8;
-        System.out.println(B); 
+        System.out.println(B);
         char ch = 'a';
         System.out.println(ch);
         boolean var = false;
@@ -55,8 +56,24 @@ public class basics {
         int sum = x + y;
         System.out.println(sum);
         // input in java
-        Scanner sc  = new Scanner(System.in);
-        
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        System.out.println(input);
+        int number = sc.nextInt();
+        System.out.println(number);
+        Byte bit = sc.nextByte();
+        System.out.println(bit);
+        Float flo = sc.nextFloat();
+        System.out.println(flo);
+        Double dl = sc.nextDouble();
+        System.out.println(dl);
+        Boolean bool = sc.nextBoolean();
+        System.out.println(bool);
+        Short srt = sc.nextShort();
+        System.out.println(srt);
+        Long lg = sc.nextLong();
+        System.out.println(lg);
+        sc.close();
 
     }
 }

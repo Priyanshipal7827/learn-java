@@ -1,3 +1,4 @@
+import java.util.*;
 public class basics {
     public static void main(String arg[]){
         // print statement
@@ -53,6 +54,9 @@ public class basics {
         int y = 30;
         int sum = x + y;
         System.out.println(sum);
+        // input in java
+        Scanner sc  = new Scanner(System.in);
         
+
     }
 }

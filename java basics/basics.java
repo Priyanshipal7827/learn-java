@@ -48,6 +48,11 @@ public class basics {
         System.out.println(num);
         short n = 240;
         System.out.println(n);
+        // sum of a & b
+        int x = 10;
+        int y = 30;
+        int sum = x + y;
+        System.out.println(sum);
         
     }
 }

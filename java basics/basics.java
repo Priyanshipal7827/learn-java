@@ -11,6 +11,11 @@ public class basics {
         System.out.println("**");
         System.out.println("*");
         // varibles
-
+        String name = "priyanshi pal";
+        int a = 10;
+        int b = 5;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(name);
     }
 }

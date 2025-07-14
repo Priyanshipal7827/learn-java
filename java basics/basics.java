@@ -17,5 +17,37 @@ public class basics {
         System.out.println(a);
         System.out.println(b);
         System.out.println(name);
+        // data types
+        // data types are two types
+        // 1 is primitive data  type
+        // byte
+        // short
+        // int
+        // char
+        // long
+        // double
+        // float
+        // boolean
+
+        // 2 is non primitive data types
+        // String
+        // array
+        // class 
+        // object
+        // interface
+        // java is a types language
+        byte B = 8;
+        System.out.println(B); 
+        char ch = 'a';
+        System.out.println(ch);
+        boolean var = false;
+        System.out.println(var);
+        float price = 10;
+        System.out.println(price);
+        int num = 10;
+        System.out.println(num);
+        short n = 240;
+        System.out.println(n);
+        
     }
 }

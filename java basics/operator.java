@@ -20,12 +20,15 @@ public class operator {
         // int b = ++a;
         // System.out.println(b);
         // *****************relational operators********************
-        System.out.println(a==b);
-        System.out.println(a!=b);
-        System.out.println(a<b);
-        System.out.println(a>b);
-        System.out.println(a<=b);
-        System.out.println(a>=b);
+        // System.out.println(a==b);
+        // System.out.println(a!=b);
+        // System.out.println(a<b);
+        // System.out.println(a>b);
+        // System.out.println(a<=b);
+        // System.out.println(a>=b);
+        //***********logical operators**************
+        // AND operator
+        System.out.println((3>2) && (5<0));
 
 
     }

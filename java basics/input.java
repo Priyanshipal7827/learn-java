@@ -22,5 +22,10 @@ public class input {
         // long b = a; 
      
         // System.out.println(b);
+        // *****************type casting ******************
+        float a = 25.34f;
+        int b = (int) a;  
+        System.out.println(b);   
+    
     }
 }

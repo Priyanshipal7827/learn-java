@@ -1,3 +1,4 @@
+import java.util.*;
 public class statement {
     public static void main(String arg[]){
         // *************conditional statement************
@@ -20,5 +21,14 @@ public class statement {
         }else{
             System.out.println("B is largest of two number");
         }
+        // print even and odd number useing input
+        Scanner sc = new Scanner(System.in);
+        int number =  sc.nextInt();
+        if(number % 2 == 0){
+            System.out.println("Number is even : " + number);
+        } else{
+            System.out.println("Number is odd : " +  number);
+        }
+
     }
 }

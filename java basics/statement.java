@@ -69,7 +69,10 @@ public class statement {
         int num = 12;
         String type = (num%2 == 0)? "even" : "odd";
         System.out.println(type);
-
+        //  check paass or fail
+        int marks = 31;
+        String result = (marks >= 33) ? "pass":"fail";
+        System.out.println(result);
         sc.close();
     }
 }

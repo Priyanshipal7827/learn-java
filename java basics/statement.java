@@ -12,5 +12,13 @@ public class statement {
         else {
             System.out.println("Not adult!");
         }
+        // find the largest of two numbers
+        int a = 12;
+        int b = 40;
+        if (a>b) {
+            System.out.println("A is largest of two numbers!");
+        }else{
+            System.out.println("B is largest of two number");
+        }
     }
 }

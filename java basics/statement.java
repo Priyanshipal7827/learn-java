@@ -60,11 +60,15 @@ public class statement {
         int z = sc.nextInt();
         if( (x>=y) && (x>=z)){
             System.out.println("X is largest number!");
-        } else if(y>=z){
-            System.out.println(" Y is largest number!");
+        } else if(y>=z){ 
+            System.out.println("Y is largest number!");
         } else{
             System.out.println("Z is largeswt number!");
         }
+        // learn ternory operator
+        int num = 12;
+        String type = (num%2 == 0)? "even" : "odd";
+        System.out.println(type);
 
         sc.close();
     }

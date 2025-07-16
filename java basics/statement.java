@@ -29,6 +29,6 @@ public class statement {
         } else{
             System.out.println("Number is odd : " +  number);
         }
-
+        sc.close();
     }
 }

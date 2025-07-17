@@ -1,3 +1,4 @@
+import java.util.*;
 public class loops {
     public static void main(String arg[]){
         //learn loops 
@@ -12,5 +13,15 @@ public class loops {
         System.out.println(num);
         num++;
     }
+    // print  number  1 to n 
+    Scanner sc = new Scanner(System.in);
+    int i = 1;
+    int n = sc.nextInt();
+    while(i <= n){
+        System.out.println(i);
+        i++;
+    }
+    sc.close();
+
     }
 }

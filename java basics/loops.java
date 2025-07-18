@@ -29,11 +29,17 @@ public class loops {
         int j = 1;
         int n1 = sc.nextInt();
         int sum = 0;
-        while (j <= n1) {
+         while (j <= n1) {
             sum += j;
             j++;
         }
         System.out.println("Sum is : " + sum);
+
+        // foor loop
+        // print hello world using for loop
+        for(int i = 1; i <= 5; i++){
+            System.out.println("hello world!");
+        }
 
         sc.close();
 

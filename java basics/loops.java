@@ -25,7 +25,7 @@ public class loops {
         // }
 
         // print sum of natural numbers
-        System.out.println("Enter value of n1 : ");
+        System.out.print("Enter value of n1 : ");
         int j = 1;
         int n1 = sc.nextInt();
         int sum = 0;

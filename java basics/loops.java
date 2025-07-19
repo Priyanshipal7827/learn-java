@@ -108,8 +108,22 @@ public class loops {
         //     }
         //     System.out.println("Number was : " + n);
         // } while(true);
-        sc.close();
 
+
+        // check if a number is prime or not
+       System.out.print("Check number is prime or not");
+       int N = sc.nextInt();
+       boolean isPrime = true;
+       for(int i = 2; i <= N-1; i++){
+        if(N % i == 0){
+            isPrime = false;
+        }
+        
+       }
+
+       if(isPrime == true){
+        System.out.println("N is a prime number " + N);
+       }
     }
 
 }

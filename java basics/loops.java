@@ -64,6 +64,11 @@ public class loops {
             number /= 10;
         }
         System.out.println(rev);
+        
+        // do while loop 
+        System.out.println("print hello world using do while loop");
+        
+
         sc.close();
 
     }

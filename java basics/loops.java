@@ -25,11 +25,12 @@ public class loops {
         // }
 
         // print sum of natural numbers
+        System.out.println("print sum of natural numbers");
         System.out.print("Enter value of n1 : ");
         int j = 1;
         int n1 = sc.nextInt();
         int sum = 0;
-         while (j <= n1) {
+        while (j <= n1) {
             sum += j;
             j++;
         }
@@ -37,21 +38,32 @@ public class loops {
 
         // foor loop
         // print hello world using for loop
-        for(int i = 1; i <= 5; i++){
+        System.out.println("print hello world using for loop");
+        for (int i = 1; i <= 5; i++) {
             System.out.println("hello world!");
         }
-        //  print squre pattern 
-        for(int i = 1; i <= 4; i++){
+        // print squre pattern
+        System.out.println("print square pattern using for loop.");
+        for (int i = 1; i <= 4; i++) {
             System.out.println("* * * *");
         }
         // print reverse of given number
+        System.out.print("Print reverse of numbers");
         int dig = sc.nextInt();
-        while(dig > 0){
-            int lastdig = dig%10;
-            System.out.print(lastdig);
+        while (dig > 0) {
+            int lastdig = dig % 10;
+            System.out.println(lastdig);
             dig /= 10;
         }
-
+        // reverse method second
+        int number = sc.nextInt();
+        int rev = 0;
+        while (number > 0) {
+            int lastdigit = number % 10;
+            rev = (rev*10) + lastdigit;
+            number /= 10;
+        }
+        System.out.println(rev);
         sc.close();
 
     }

@@ -111,7 +111,7 @@ public class loops {
 
 
         // check if a number is prime or not
-       System.out.print("Check number is prime or not");
+       System.out.print("Check number is prime or not : ");
        int N = sc.nextInt();
        boolean isPrime = true;
        for(int i = 2; i <= N-1; i++){
@@ -124,7 +124,7 @@ public class loops {
        if(isPrime == true){
         System.out.println("N is a prime number " + N);
        }else {
-        System.out.println("N is not prime number" + N);
+        System.out.println("N is not prime number " + N);
        }
     }
 

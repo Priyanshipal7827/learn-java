@@ -99,6 +99,15 @@ public class loops {
             }
             System.out.println(i);
         }
+        // question using continue statement
+        // do{
+        //     System.out.print("Enter your number : ");
+        //     int n = sc.nextInt();
+        //     if(n%10 == 0){
+        //         continue;
+        //     }
+        //     System.out.println("Number was : " + n);
+        // } while(true);
         sc.close();
 
     }

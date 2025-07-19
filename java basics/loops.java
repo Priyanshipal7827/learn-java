@@ -123,6 +123,8 @@ public class loops {
 
        if(isPrime == true){
         System.out.println("N is a prime number " + N);
+       }else {
+        System.out.println("N is not prime number" + N);
        }
     }
 

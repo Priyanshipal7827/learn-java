@@ -52,7 +52,7 @@ public class loops {
         int dig = sc.nextInt();
         while (dig > 0) {
             int lastdig = dig % 10;
-            System.out.println(lastdig);
+            System.out.print(lastdig);
             dig /= 10;
         }
         // reverse method second
@@ -72,6 +72,14 @@ public class loops {
             System.out.println("hello world!");
             k++;
         } while(k <= 5);
+
+        // break statement
+        for(int i = 0; i <= 5; i++){
+            if (i == 3) {
+                break;
+            }
+            System.out.println(i);
+        }
 
         sc.close();
 

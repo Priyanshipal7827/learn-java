@@ -93,39 +93,43 @@ public class loops {
         } while (true);
 
         // continue statement
-        for(int i = 0; i<= 5; i++){
-            if(i==3){
+        for (int i = 0; i <= 5; i++) {
+            if (i == 3) {
                 continue;
             }
             System.out.println(i);
         }
         // question using continue statement
         // do{
-        //     System.out.print("Enter your number : ");
-        //     int n = sc.nextInt();
-        //     if(n%10 == 0){
-        //         continue;
-        //     }
-        //     System.out.println("Number was : " + n);
+        // System.out.print("Enter your number : ");
+        // int n = sc.nextInt();
+        // if(n%10 == 0){
+        // continue;
+        // }
+        // System.out.println("Number was : " + n);
         // } while(true);
 
-
         // check if a number is prime or not
-       System.out.print("Check number is prime or not : ");
-       int N = sc.nextInt();
-       boolean isPrime = true;
-       for(int i = 2; i <= N-1; i++){
-        if(N % i == 0){
-            isPrime = false;
-        }
-        
-       }
+        System.out.print("Check number is prime or not : ");
 
-       if(isPrime == true){
-        System.out.println("N is a prime number " + N);
-       }else {
-        System.out.println("N is not prime number " + N);
-       }
+        int N = sc.nextInt();
+        
+        if (N == 2) {
+            System.out.println("N is prime ");
+        } else {
+            boolean isPrime = true;
+            for (int i = 2; i <= N - 1; i++) {
+                if (N % i == 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime == true) {
+                System.out.println("N is a prime number " + N);
+            } else {
+                System.out.println("N is not prime number " + N);
+            }
+        }
+
     }
 
 }

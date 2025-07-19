@@ -129,6 +129,25 @@ public class loops {
                 System.out.println("N is not prime number " + N);
             }
         }
+        // optimized code 
+        System.out.println("Check number is prime or not :");
+        int N1 = sc.nextInt();
+        
+        if (N1 == 2) {
+            System.out.println("N1 is prime ");
+        } else {
+            boolean isPrime = true;
+            for (int i = 2; i <= Math.sqrt(N1); i++) {
+                if (N1 % i == 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime == true) {
+                System.out.println("N is a prime number " + N1);
+            } else {
+                System.out.println("N is not prime number " + N1);
+            }
+        }
 
     }
 

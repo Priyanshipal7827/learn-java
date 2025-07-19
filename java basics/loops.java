@@ -40,6 +40,17 @@ public class loops {
         for(int i = 1; i <= 5; i++){
             System.out.println("hello world!");
         }
+        //  print squre pattern 
+        for(int i = 1; i <= 4; i++){
+            System.out.println("* * * *");
+        }
+        // print reverse of given number
+        int dig = sc.nextInt();
+        while(dig > 0){
+            int lastdig = dig%10;
+            System.out.print(lastdig);
+            dig /= 10;
+        }
 
         sc.close();
 

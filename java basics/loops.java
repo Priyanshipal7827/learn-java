@@ -67,7 +67,11 @@ public class loops {
         
         // do while loop 
         System.out.println("print hello world using do while loop");
-        
+        int k = 1;
+        do{
+            System.out.println("hello world!");
+            k++;
+        } while(k <= 5);
 
         sc.close();
 

@@ -60,28 +60,39 @@ public class loops {
         int rev = 0;
         while (number > 0) {
             int lastdigit = number % 10;
-            rev = (rev*10) + lastdigit;
+            rev = (rev * 10) + lastdigit;
             number /= 10;
         }
         System.out.println(rev);
-        
-        // do while loop 
+
+        // do while loop
         System.out.println("print hello world using do while loop");
         int k = 1;
-        do{
+        do {
             System.out.println("hello world!");
             k++;
-        } while(k <= 5);
+        } while (k <= 5);
 
         // break statement
-        for(int i = 0; i <= 5; i++){
+        for (int i = 0; i <= 5; i++) {
             if (i == 3) {
                 break;
             }
             System.out.println(i);
         }
 
-        sc.close();
+        // question beark statement
 
+        do {
+              System.out.print("Enter your value : ");
+            int val = sc.nextInt();
+            if( val % 10 == 0){
+                break;
+            }
+            System.out.println(val);
+        } while (true);
+
+    
     }
+
 }

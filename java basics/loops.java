@@ -148,7 +148,7 @@ public class loops {
                 System.out.println("N is not prime number " + N1);
             }
         }
-
+sc.close();
     }
 
 }

@@ -25,11 +25,11 @@ public class question {
 
         // ***************quetion based on operators ***********
         // question 1
-        int x = 2, y = 5;
-        int exp1 = (x * y / x);
-        int exp2 = (x * (y / x));
-        System.out.println(exp1);
-        System.out.println(exp2);
+        // int x = 2, y = 5;
+        // int exp1 = (x * y / x);
+        // int exp2 = (x * (y / x));
+        // System.out.println(exp1);
+        // System.out.println(exp2);
 
         // question 2
         int x1 = 200, y1 = 50, z1 = 100;
@@ -42,7 +42,15 @@ public class question {
         if ((y1 + 200) < x1 && (y1 + 150) < z1) {
             System.out.println("Hello Java");
 
-            sc.close();
         }
+        // question 3 
+        int x, y, z;
+        x = y = z = 2;
+        x += y;
+        y -= z;
+        z /= (x + y);
+        System.out.println(x + " " + y + " " + z);
+
+        sc.close();
     }
 }

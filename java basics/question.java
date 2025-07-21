@@ -43,13 +43,19 @@ public class question {
             System.out.println("Hello Java");
 
         }
-        // question 3 
-        int x, y, z;
-        x = y = z = 2;
-        x += y;
-        y -= z;
-        z /= (x + y);
-        System.out.println(x + " " + y + " " + z);
+        // question 3
+        // int x, y, z;
+        // x = y = z = 2;
+        // x += y;
+        // y -= z;
+        // z /= (x + y);
+        // System.out.println(x + " " + y + " " + z);
+
+        // question 4
+        int x = 9, y = 12;
+        int a1 = 2, b1 = 4, c1 = 6;
+        int exp = 4 / 3 * (x + 34) + 9 * (a1 + b1 * c1) + (3 + y * (2 + a1)) / (a1 + b1 * y);
+        System.out.println(exp);
 
         sc.close();
     }

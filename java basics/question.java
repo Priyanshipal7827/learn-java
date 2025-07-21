@@ -57,6 +57,14 @@ public class question {
         int exp = 4 / 3 * (x + 34) + 9 * (a1 + b1 * c1) + (3 + y * (2 + a1)) / (a1 + b1 * y);
         System.out.println(exp);
 
+        // question 5
+
+        int p = 10, q = 5;
+        int exp1 = (q * (p / q + p / q));
+        int exp2 = (q * p / q + q * p / q);
+        System.out.println(exp1);
+        System.out.println(exp2);
+
         sc.close();
     }
 }

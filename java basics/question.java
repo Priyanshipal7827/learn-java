@@ -7,7 +7,7 @@ public class question {
         double a = sc.nextFloat();
         double b = sc.nextFloat();
         double c = sc.nextFloat();
-        double avg = (a + b + c)/ 3;
+        double avg = (a + b + c) / 3;
         System.out.println(avg);
         // *******************question 2 find the area of the side ***********
         // int side = sc.nextInt();
@@ -23,10 +23,14 @@ public class question {
         float newtotal = total + (0.18f * total);
         System.out.println("Bill of : " + newtotal);
 
-
         // ***************quetion based on operators ***********
-        
-        
+
+        int x = 2, y = 5;
+        int exp1 = (x * y / x);
+        int exp2 = (x * (y / x));
+        System.out.println(exp1 + " , ");
+        System.out.println(exp2);
+
         sc.close();
     }
 }

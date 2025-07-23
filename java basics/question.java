@@ -71,16 +71,54 @@ public class question {
 
         // question 2
         // check you have fever or not
-       System.out.print("Enter your tempreture : " );
+        System.out.print("Enter your tempreture : ");
         double temp = sc.nextDouble();
-         
 
-        if(temp > 100){
+        if (temp > 100) {
             System.out.println("You have fever.");
-        }
-        else{
+        } else {
             System.out.println("You have not fever.");
         }
+        // question number 3
+        // Write a Java program to input week number(1-7) and print day of week name
+
+        System.out.print("Enter week number : ");
+        int week = sc.nextInt();
+        switch (week) {
+            case 1:
+                System.out.println("Monday");
+
+                break;
+                  case 2:
+                System.out.println("Tuseday");
+
+                break;
+                  case 3:
+                System.out.println("Wednesday");
+
+                break;
+                  case 4:
+                System.out.println("Thursday");
+
+                break;
+                  case 5:
+                System.out.println("Friday");
+
+                break;
+                  case 6:
+                System.out.println("Saturday");
+
+                break;
+                  case 7:
+                System.out.println("Sunday");
+
+                break;
+
+            default:
+            System.out.println("Somthing is wrong");
+                break;
+        }
+
         sc.close();
     }
 }

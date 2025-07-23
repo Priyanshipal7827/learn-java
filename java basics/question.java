@@ -64,7 +64,23 @@ public class question {
         int exp2 = (q * p / q + q * p / q);
         System.out.println(exp1);
         System.out.println(exp2);
+        // conditional statement
+        // question 1
 
+        // check numer is positive or not
+
+        // question 2
+        // check you have fever or not
+       System.out.print("Enter your tempreture : " );
+        double temp = sc.nextDouble();
+         
+
+        if(temp > 100){
+            System.out.println("You have fever.");
+        }
+        else{
+            System.out.println("You have not fever.");
+        }
         sc.close();
     }
 }

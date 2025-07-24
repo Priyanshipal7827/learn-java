@@ -182,17 +182,17 @@ public class question {
         // design a calculator using if else statement
 
         if (operation == '+') {
-            System.out.println("Your answer is : " + a + b);
+            System.out.println("Your answer is : " + (a + b));
 
         }
          else if (operation == '-') {
-            System.out.println("Your answer is : " + a - b);
+            System.out.println("Your answer is : " + (a - b));
         }
          else if (operation == '*') {
-            System.out.println("Your answer is : " + a * b);
+            System.out.println("Your answer is : " + (a * b));
         }
          else if (operation == '/') {
-            System.out.println("Your answer is : " + a / b);
+            System.out.println("Your answer is : " + (a / b));
         } 
         else {
             System.out.println("Not valid operation!");

@@ -149,13 +149,10 @@ public class question {
         // question number 6
         // calculator using switch statement
 
-        System.out.print("Enter value of a : ");
-        int a = sc.nextInt();
-        System.out.print("Enter value of b : ");
-        int b = sc.nextInt();
-        System.out.print("Enter operator : ");
-
-        char operation = sc.next().charAt(0);
+       
+        int a = 10;       
+        int b = 20;
+        char operation = '+';
         // switch (operation) {
         // case '+':
         // System.out.println(a + b);
@@ -197,6 +194,65 @@ public class question {
         else {
             System.out.println("Not valid operation!");
         }
+
+        // number of month
+        System.out.println("Enter month number : ");
+
+        int month = sc.nextInt();
+         switch (month) {
+            case 1 : 
+            System.out.println("month is Jan.");
+            break;
+
+            case 2 : 
+            System.out.println("month is Feb.");
+            break;
+
+            case 3 : 
+            System.out.println("month is Mar.");
+            break;
+
+            case 4 : 
+            System.out.println("month is Apr.");
+            break;
+
+            case 5 : 
+            System.out.println("month is May.");
+          break;
+
+            case 6 : 
+            System.out.println("month is June.");
+           break;
+
+            case 7 : 
+            System.out.println("month is July.");
+           break;
+
+            case 8 : 
+            System.out.println("month is Aug.");
+            break;
+
+            case 9 : 
+            System.out.println("month is Sep.");
+            break;
+
+            case 10 : 
+            System.out.println("month is Oct.");
+            break;
+
+            case 11 : 
+            System.out.println("month is Nov.");
+            break;
+
+            case 12 : 
+            System.out.println("month is Dec.");
+            break;
+
+            default : 
+            System.out.println("Month number is incorrect!");
+            break;
+
+         }
 
         sc.close();
     }

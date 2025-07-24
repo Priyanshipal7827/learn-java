@@ -122,12 +122,24 @@ public class question {
 
         // question number 4
         // find the value of x and y
-        int a = 63;
-        int b = 36;
-        boolean x = (a < b) ? true : false;
-        int y = (a > b) ? a : b;
-        System.out.println("Value of X : " + x);
-        System.out.println("Value of Y : " + y);
+        // int a = 63;
+        // int b = 36;
+        // boolean x = (a < b) ? true : false;
+        // int y = (a > b) ? a : b;
+        // System.out.println("Value of X : " + x);
+        // System.out.println("Value of Y : " + y);
+
+        // question number 5
+        // leap year or not
+        
+        int year = sc.nextInt();
+        if((year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0)){
+            System.out.println("Leap year");
+        } else {
+            System.out.println("Not a leap year");
+        }
+        
+         
 
         sc.close();
     }

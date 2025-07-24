@@ -67,16 +67,14 @@ public class question {
         // System.out.println(exp2);
         // conditional statement
         // question 1
-            int num = sc.nextInt();
-            if(num > 0 ){
-                System.out.println("Positive number");
-            }
-            else if(num < 0 ){
-                System.out.println("Negative number");
-            }
-            else{
-                System.out.println("Zero");
-            }
+        // int num = sc.nextInt();
+        // if (num > 0) {
+        // System.out.println("Positive number");
+        // } else if (num < 0) {
+        // System.out.println("Negative number");
+        // } else {
+        // System.out.println("Zero");
+        // }
 
         // check numer is positive or not
 
@@ -141,15 +139,64 @@ public class question {
 
         // question number 5
         // leap year or not
-        
+
         // int year = sc.nextInt();
         // if((year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0)){
-        //     System.out.println("Leap year");
+        // System.out.println("Leap year");
         // } else {
-        //     System.out.println("Not a leap year");
+        // System.out.println("Not a leap year");
         // }
-        
-         
+        // question number 6
+        // calculator using switch statement
+
+        System.out.print("Enter value of a : ");
+        int a = sc.nextInt();
+        System.out.print("Enter value of b : ");
+        int b = sc.nextInt();
+        System.out.print("Enter operator : ");
+
+        char operation = sc.next().charAt(0);
+        // switch (operation) {
+        // case '+':
+        // System.out.println(a + b);
+        // break;
+
+        // case '-':
+        // System.out.println(a - b);
+        // break;
+
+        // case '*':
+        // System.out.println(a * b);
+        // break;
+
+        // case '/':
+        // System.out.println(a / b);
+        // break;
+
+        // default:
+        // System.out.println("Not valid operator");
+        // break;
+
+        // }
+
+        // design a calculator using if else statement
+
+        if (operation == '+') {
+            System.out.println("Your answer is : " + a + b);
+
+        }
+         else if (operation == '-') {
+            System.out.println("Your answer is : " + a - b);
+        }
+         else if (operation == '*') {
+            System.out.println("Your answer is : " + a * b);
+        }
+         else if (operation == '/') {
+            System.out.println("Your answer is : " + a / b);
+        } 
+        else {
+            System.out.println("Not valid operation!");
+        }
 
         sc.close();
     }

@@ -67,6 +67,16 @@ public class question {
         // System.out.println(exp2);
         // conditional statement
         // question 1
+            int num = sc.nextInt();
+            if(num > 0 ){
+                System.out.println("Positive number");
+            }
+            else if(num < 0 ){
+                System.out.println("Negative number");
+            }
+            else{
+                System.out.println("Zero");
+            }
 
         // check numer is positive or not
 
@@ -132,12 +142,12 @@ public class question {
         // question number 5
         // leap year or not
         
-        int year = sc.nextInt();
-        if((year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0)){
-            System.out.println("Leap year");
-        } else {
-            System.out.println("Not a leap year");
-        }
+        // int year = sc.nextInt();
+        // if((year % 4 == 0 && year % 100 != 0 ) || (year % 400 == 0)){
+        //     System.out.println("Leap year");
+        // } else {
+        //     System.out.println("Not a leap year");
+        // }
         
          
 

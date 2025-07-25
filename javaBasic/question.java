@@ -249,6 +249,8 @@ public class question {
 
         }
 
+        
+
         sc.close();
     }
 }

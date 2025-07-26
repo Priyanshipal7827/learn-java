@@ -30,7 +30,12 @@ public class operator {
         y2 -= z2;
         z2 /= (x2 + y2);
         System.out.println(x2 + " " + y2 + " " + z2);
-        
+
+        // ************** question 4 ***********
+        int x3 = 9, y3 = 12;
+        int a = 2, b = 4, c = 6;
+        int exp = 4 / 3 * (x3 + 34) + 9 * (a + b * c) + (3 + y3 * (2 + a)) / (a + b * y3);
+        System.out.println(exp);
 
     }
 }

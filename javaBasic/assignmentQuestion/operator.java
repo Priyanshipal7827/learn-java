@@ -24,16 +24,13 @@ public class operator {
         }
 
         // **************** question 3 **************
-
         int x2, y2, z2;
         x2 = y2 = z2 = 2;
         x2 += y2;
         y2 -= z2;
         z2 /= (x2 + y2);
         System.out.println(x2 + " " + y2 + " " + z2);
+        
 
-
-
-        //  **************** question 4
     }
 }

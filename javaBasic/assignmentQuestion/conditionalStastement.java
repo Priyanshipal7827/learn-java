@@ -58,6 +58,14 @@ public class conditionalStastement {
 
         }
 
+        // ************** question 4 *************
+
+        int a = 63, b = 36;
+        boolean x = (a < b) ? true : false;
+        int y = (a > b) ? a : b;
+        System.out.println("The value of X : " + x);
+        System.out.println("The value of Y : " + y);
+
         sc.close();
     }
 

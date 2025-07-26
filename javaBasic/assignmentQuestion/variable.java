@@ -57,7 +57,7 @@ public class variable {
         int i = 1000;
         float f = 3.14f;
         double d = 99.9954;
-        double result = (f*b) + (i/c) - (d*s);
+        double result = (f*B) + (i/c) - (d*s);
         System.out.println(result);
         
 

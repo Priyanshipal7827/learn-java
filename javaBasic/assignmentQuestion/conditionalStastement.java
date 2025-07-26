@@ -18,6 +18,17 @@ public class conditionalStastement {
             System.out.println("Number is zero : " + num);
         }
 
+
+
+        // *************** question 2 **********
+        System.out.print("Enter your temperature : ");
+        double temp = sc.nextDouble();
+        if(temp > 100){
+            System.out.println("You have a fever because your temp is : " + temp);
+        } else{
+            System.out.println("You don't have a fever because your temp is : " + temp);
+        }
+
         sc.close();
     }
 

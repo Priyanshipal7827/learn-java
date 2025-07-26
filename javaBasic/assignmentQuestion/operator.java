@@ -37,5 +37,12 @@ public class operator {
         int exp = 4 / 3 * (x3 + 34) + 9 * (a + b * c) + (3 + y3 * (2 + a)) / (a + b * y3);
         System.out.println(exp);
 
+        // ************* question 5 ***************
+
+        int x4 = 10, y4 = 5;
+        int res1= (y4 * (x4 / y4 + x4 / y4));
+        int res2 = (y4 * x4 / y4 + y4 * x4 / y4);
+        System.out.println(res1);
+        System.out.println(res2);
     }
 }

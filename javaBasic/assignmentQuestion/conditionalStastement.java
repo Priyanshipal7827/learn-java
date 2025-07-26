@@ -66,6 +66,19 @@ public class conditionalStastement {
         System.out.println("The value of X : " + x);
         System.out.println("The value of Y : " + y);
 
+
+
+        //  *************** question 5 **********
+
+        System.out.print("Enter the year : ");
+        int year = sc.nextInt();
+        if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println("This year is leap ");
+        } 
+        else{
+            System.out.println("This year is not leap ");
+
+        }
         sc.close();
     }
 

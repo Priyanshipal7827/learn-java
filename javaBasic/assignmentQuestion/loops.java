@@ -20,6 +20,12 @@ public class loops {
             newNum++;
         } while(newNum<=5);
 
+        //  for loop
+
+        for(int k=1; k<=5; k++){
+            System.out.println(k);
+        }
+
         // ************ question 1 ****************
         for (int i = 0; i < 5; i++) {
             System.out.println("Hello " + i);

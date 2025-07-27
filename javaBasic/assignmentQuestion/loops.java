@@ -11,6 +11,15 @@ public class loops {
             System.out.println("hello priyanshi! " + n);
             n++;
         }
+
+
+        // do while loop
+        int newNum = 1;
+        do {
+            System.out.println(newNum);
+            newNum++;
+        } while(newNum<=5);
+
         // ************ question 1 ****************
         for (int i = 0; i < 5; i++) {
             System.out.println("Hello " + i);

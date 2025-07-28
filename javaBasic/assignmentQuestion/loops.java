@@ -38,12 +38,18 @@ public class loops {
 
         // ****************** question 2 ************
         int number = sc.nextInt();
-        int sum = 0;
-        for(int i = 1; i<=number; i++){
-             sum += i ;
-        }
-            System.out.println(sum);
+        // int sum = 0;
+        // for(int i = 1; i<=number; i++){
+        //      sum += i ;
+        // }
+        //     System.out.println(sum);
 
+            // ******************** question 3 **************
+            // print table of n number
+
+            for(int i = 1; i <= 10; i++){
+                System.out.println(number*i);
+            }
 
 
 

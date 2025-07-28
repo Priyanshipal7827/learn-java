@@ -16,35 +16,52 @@ public class loops {
         // }
 
         // do while loop
-        int newNum = 1;
-        do {
-            System.out.print(newNum);
-            newNum++;
-        } while (newNum <= 5);
+        // int newNum = 1;
+        // do {
+        //     System.out.print(newNum);
+        //     newNum++;
+        // } while (newNum <= 5);
 
         // for loop
 
-        for (int k = 1; k <= 5; k++) {
-            System.out.println(k);
-        }
+        // for (int k = 1; k <= 5; k++) {
+        //     System.out.println(k);
+        // }
 
-        // ************ question 1 ****************
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Hello " + i);
-            // i += 2;
+        // // ************ question 1 ****************
+        // for (int i = 0; i < 5; i++) {
+        //     System.out.println("Hello " + i);
+        //     // i += 2;
+        // }
+
+
+
+        // ****************** question 2 ************
+        int number = sc.nextInt();
+        int sum = 0;
+        for(int i = 1; i<=number; i++){
+             sum += i ;
         }
+            System.out.println(sum);
+
+
+
+
 
         // ***************** question 4 ************
-        System.out.print("Enter the value : ");
-        int n = sc.nextInt();
-        for (int i = 1; i <= n; i++) {
-            System.out.println(i + " * " + n + " = " + i*n );
-        }
+        // System.out.print("Enter the value : ");
+        // int n = sc.nextInt();
+        // for (int i = 1; i <= n; i++) {
+        //     System.out.println(i + " * " + n + " = " + i*n );
+        // }
+
+
+
 
         // ****************** question 5************
-        for (int i = 0; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        // for (int i = 0; i <= 5; i++) {
+        //     System.out.println("i = " + i);
+        // }
 
         sc.close();
 

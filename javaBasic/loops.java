@@ -113,7 +113,7 @@ public class loops {
         System.out.print("Check number is prime or not : ");
 
         int N = sc.nextInt();
-        
+
         if (N == 2) {
             System.out.println("N is prime ");
         } else {
@@ -129,10 +129,10 @@ public class loops {
                 System.out.println("N is not prime number " + N);
             }
         }
-        // optimized code 
+        // optimized code
         System.out.println("Check number is prime or not :");
         int N1 = sc.nextInt();
-        
+
         if (N1 == 2) {
             System.out.println("N1 is prime ");
         } else {
@@ -148,7 +148,74 @@ public class loops {
                 System.out.println("N is not prime number " + N1);
             }
         }
-sc.close();
+
+        // assign ment question
+
+        // learn loops
+        // while loop
+
+        // int n = 1;
+        // while (n <= 5) {
+        // System.out.println("hello priyanshi! " + n);
+        // n++;
+        // }
+
+        // do while loop
+        // int newNum = 1;
+        // do {
+        // System.out.print(newNum);
+        // newNum++;
+        // } while (newNum <= 5);
+
+        // for loop
+
+        // for (int k = 1; k <= 5; k++) {
+        // System.out.println(k);
+        // }
+
+        // // ************ question 1 ****************
+        // for (int i = 0; i < 5; i++) {
+        // System.out.println("Hello " + i);
+        // // i += 2;
+        // }
+
+        // ****************** question 2 ************
+        // int number = sc.nextInt();
+        // int sum = 0;
+        // for(int i = 1; i<=number; i++){
+        // sum += i ;
+        // }
+        // System.out.println(sum);
+
+        // ******************** question 3 **************
+        // print table of n number
+
+        // for(int i = 1; i <= 10; i++){
+        // System.out.println(number*i);
+        // }
+
+        // ***************** question 4 ************
+        // System.out.print("Enter the value : ");
+        // int n = sc.nextInt();
+        // for (int i = 1; i <= n; i++) {
+        // System.out.println(i + " * " + n + " = " + i*n );
+        // }
+
+        // ****************** question 5************
+        // for (int i = 0; i <= 5; i++) {
+        // System.out.println("i = " + i);
+        // }
+
+        // ************ question no 6 **************
+
+       int i = 1;
+       int j1 = 10;
+       while (i<j1) {
+        System.out.println(i + " , " + j1 );
+        i++;
+        j1--;
+       }
+        sc.close();
     }
 
 }

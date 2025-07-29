@@ -1,5 +1,3 @@
-package assignmentQuestion;
-
 import java.util.Scanner;
 
 public class variable {

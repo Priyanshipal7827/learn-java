@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class statement {
+public class conditionalStatement {
     public static void main(String arg[]) {
         // *************conditional statement************
         // if else statement
@@ -113,9 +113,83 @@ public class statement {
             case '%':
                 System.out.println(a % b);
                 break;
-            default :
-            System.out.println("wrong operator");
+            default:
+                System.out.println("wrong operator");
         }
+
+        // assignment questions
+
+        // ************* question 1 *************
+
+        System.out.print("Enter the number : ");
+        int num1 = sc.nextInt();
+        if (num1 > 0) {
+            System.out.println("Number is positive : " + num1);
+        } else if (num1 < 0) {
+            System.out.println("Number is negative : " + num1);
+        } else {
+            System.out.println("Number is zero : " + num1);
+        }
+
+        // *************** question 2 **********
+        System.out.print("Enter your temperature : ");
+        double temp = sc.nextDouble();
+        if (temp > 100) {
+            System.out.println("You have a fever because your temp is : " + temp);
+        } else {
+            System.out.println("You don't have a fever because your temp is : " + temp);
+        }
+
+        // ************ question 3 ****************
+        System.out.print("Enter the week number : ");
+        int day = sc.nextInt();
+
+        switch (day) {
+            case 1:
+                System.out.println("Today is Sunday.");
+                break;
+            case 2:
+                System.out.println("Today is Monday.");
+                break;
+            case 3:
+                System.out.println("Today is Tuesday.");
+                break;
+            case 4:
+                System.out.println("Today is Wednesday.");
+                break;
+            case 5:
+                System.out.println("Today is thursday.");
+                break;
+            case 6:
+                System.out.println("Today is friday.");
+                break;
+            case 7:
+                System.out.println("Today is saturday.");
+                break;
+            default:
+                System.out.println("Something went wrong!");
+
+        }
+
+        // ************** question 4 *************
+
+        int a1 = 63, b1 = 36;
+        boolean x1 = (a1 < b1) ? true : false;
+        int y1 = (a1 > b1) ? a1 : b1;
+        System.out.println("The value of X : " + x1);
+        System.out.println("The value of Y : " + y1);
+
+        // *************** question 5 **********
+
+        System.out.print("Enter the year : ");
+        int year = sc.nextInt();
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println("This year is leap ");
+        } else {
+            System.out.println("This year is not leap ");
+
+        }
+
         sc.close();
     }
 }

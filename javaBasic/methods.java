@@ -32,33 +32,43 @@ public class methods {
 
     }
 
-    // find the product of x & y 
-   public static int product(int x , int y){
-    int product = x*y;
-    return product;
-    
-   }
+    // find the product of x & y
+    public static int product(int x, int y) {
+        int product = x * y;
+        return product;
+
+    }
+
+    // calculate the factorial is a number n , n = 4
+    public static int factorial(int n) {
+        int f = 1;
+        for (int i = 1; i <= n; i++) {
+            f = f * i;
+        }
+        return f;
+    }
 
     public static void main(String[] args) {
-        // calculate sum 
+        // calculate sum
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = calculateSum(a, b);
-         System.out.println("sum is : " + sum);
+        System.out.println("sum is : " + sum);
         // swap numbers
         int num1 = 4;
-        int num2 = 2; 
-        
-        // product of x & y 
+        int num2 = 2;
+
+        // product of x & y
         // int x = 3;
         // int y = 5;
-        
+
         // call functions
         swap(num1, num2);
         printHello();
         int prod = product(3, 5);
         System.out.println("product is : " + prod);
+       System.out.println("Factorial is : " + factorial(4));
         sc.close();
 
     }

@@ -3,10 +3,7 @@ import java.util.*;
 public class methods {
 
     // functions are block of code that perform a specific task
-    // syntax retuenType name (){
-    // to do work
-    // return statement;
-    // }
+
 
     public static void printHello() {
         System.out.println("Hello world!");
@@ -15,8 +12,8 @@ public class methods {
     // function for calculate sum
     public static int calculateSum(int a, int b) { // parameters an formal parameters
 
-        int sum = a + b;
-        return sum;
+        return a + b;
+
     }
 
     // swap values
@@ -34,9 +31,17 @@ public class methods {
 
     // find the product of x & y
     public static int product(int x, int y) {
-        int product = x * y;
-        return product;
 
+        return x*y;
+
+    }
+
+     // print table
+    public static void printTable(){
+        int n = 10;
+        for(int i=1;i<=n;i++){
+            System.out.println(i*n);
+        }
     }
 
     // calculate the factorial is a number n , n = 4
@@ -68,7 +73,8 @@ public class methods {
         printHello();
         int prod = product(3, 5);
         System.out.println("product is : " + prod);
-       System.out.println("Factorial is : " + factorial(4));
+        System.out.println("Factorial is : " + factorial(4));
+        printTable();
         sc.close();
 
     }

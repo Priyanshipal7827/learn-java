@@ -11,6 +11,8 @@ public class pattern {
             System.out.println(" ");
         }
 
+
+        
         // inverted star pattern
         System.out.println("print inverted star pattern.");
         int n = 5;

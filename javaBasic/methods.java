@@ -102,6 +102,17 @@ public class methods {
         return true;
     }
 
+    //  prime number in range
+
+    public static void primeinRange(int n){
+        for(int i=2; i<=n; i++){
+            if(isPrime(i)){
+                System.out.print(i+ " ");
+            }
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         // calculate sum
         Scanner sc = new Scanner(System.in);
@@ -126,6 +137,7 @@ public class methods {
         printTable();
         System.out.println(bincoeff(5, 2));
         System.out.println(isPrime(7));
+        primeinRange(20);
         sc.close();
 
     }

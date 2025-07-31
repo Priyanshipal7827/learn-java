@@ -4,7 +4,6 @@ public class methods {
 
     // functions are block of code that perform a specific task
 
-
     public static void printHello() {
         System.out.println("Hello world!");
     }
@@ -32,15 +31,15 @@ public class methods {
     // find the product of x & y
     public static int product(int x, int y) {
 
-        return x*y;
+        return x * y;
 
     }
 
-     // print table
-    public static void printTable(){
+    // print table
+    public static void printTable() {
         int n = 10;
-        for(int i=1;i<=n;i++){
-            System.out.println(i*n);
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i * n);
         }
     }
 
@@ -51,6 +50,16 @@ public class methods {
             f = f * i;
         }
         return f;
+    }
+
+    // find the binomial coefficient
+
+    public static int bincoeff(int n, int r){
+        int fact_n = factorial(n);
+        int fact_r = factorial(r);
+        int fact_nmr = factorial(n-r);
+        int bincoeff = fact_n/(fact_r*fact_nmr);
+        return bincoeff;
     }
 
     public static void main(String[] args) {
@@ -75,6 +84,7 @@ public class methods {
         System.out.println("product is : " + prod);
         System.out.println("Factorial is : " + factorial(4));
         printTable();
+        System.out.println(bincoeff(5,2));
         sc.close();
 
     }

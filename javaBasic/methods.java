@@ -62,6 +62,18 @@ public class methods {
         return bincoeff;
     }
 
+    //  function overloding : multiple function with same name but different parameters 
+
+    // function for sum of two num
+    public static int sumTwo(int a, int b){
+        return a+b;
+    }
+
+    // function for sum of three num
+    public static int sumThree(int a, int b,int c){
+        return a+b+c;
+    }
+
     public static void main(String[] args) {
         // calculate sum
         Scanner sc = new Scanner(System.in);

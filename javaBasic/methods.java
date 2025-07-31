@@ -54,24 +54,52 @@ public class methods {
 
     // find the binomial coefficient
 
-    public static int bincoeff(int n, int r){
+    public static int bincoeff(int n, int r) {
         int fact_n = factorial(n);
         int fact_r = factorial(r);
-        int fact_nmr = factorial(n-r);
-        int bincoeff = fact_n/(fact_r*fact_nmr);
+        int fact_nmr = factorial(n - r);
+        int bincoeff = fact_n / (fact_r * fact_nmr);
         return bincoeff;
     }
 
-    //  function overloding : multiple function with same name but different parameters 
+    // function overloding : multiple function with same name but different
+    // parameters
 
     // function for sum of two num
-    public static int sumTwo(int a, int b){
-        return a+b;
+    public static int sumTwo(int a, int b) {
+        return a + b;
     }
 
     // function for sum of three num
-    public static int sumThree(int a, int b,int c){
-        return a+b+c;
+    public static int sumThree(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // check number is prime or not
+    // public static boolean isPrime(int n) {
+    //     boolean isPrime = true;
+    //     for (int i = 2; i <= n - 1; i++) {
+    //         if (n % i == 0) {
+    //             isPrime = false;
+    //             break;
+    //         }
+    //     }
+    //     return isPrime;
+    // }
+
+    // optimize solution of check number is prime or not
+
+    public static boolean isPrime(int n){
+        if(n==2){
+            return true;
+        }
+
+        for(int i=2; i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {
@@ -96,7 +124,8 @@ public class methods {
         System.out.println("product is : " + prod);
         System.out.println("Factorial is : " + factorial(4));
         printTable();
-        System.out.println(bincoeff(5,2));
+        System.out.println(bincoeff(5, 2));
+        System.out.println(isPrime(7));
         sc.close();
 
     }

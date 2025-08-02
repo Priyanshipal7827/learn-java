@@ -127,8 +127,17 @@ public class methods {
         System.out.println("decimal of " + myNum + " = " + dec);
     }
 
-    
-   
+    // greet function overloading
+    public static void greetingCard(String firstName,String lastName){
+        System.out.println("good evening " + firstName + " " + lastName);
+    }  
+     public static void greetingCard(String firstName){
+        System.out.println("good evening " + firstName);
+    } 
+     public static void greetingCard(int age){
+        System.out.println("good evening " + age);
+    } 
+     
 
 
     public static void main(String[] args) {
@@ -139,24 +148,29 @@ public class methods {
         int sum = calculateSum(a, b);
         System.out.println("sum is : " + sum);
         // swap numbers
-        int num1 = 4;
-        int num2 = 2;
+        // int num1 = 4;
+        // int num2 = 2;
 
         // product of x & y
         // int x = 3;
         // int y = 5;
 
         // call functions
-        swap(num1, num2);
-        printHello();
-        int prod = product(3, 5);
-        System.out.println("product is : " + prod);
-        System.out.println("Factorial is : " + factorial(4));
-        printTable();
-        System.out.println(bincoeff(5, 2));
-        System.out.println(isPrime(7));
-        primeinRange(20);
-        binTodec(101);
+        // swap(num1, num2);
+        // printHello();
+        // int prod = product(3, 5);
+        // System.out.println("product is : " + prod);
+        // System.out.println("Factorial is : " + factorial(4));
+        // printTable();
+        // System.out.println(bincoeff(5, 2));
+        // System.out.println(isPrime(7));
+        // primeinRange(20);
+        // binTodec(101);
+        greetingCard("priyanshi" , "pal");
+        greetingCard("priyanshi");
+        greetingCard(20);
+
+
         sc.close();
 
     }

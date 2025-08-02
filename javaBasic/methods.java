@@ -127,6 +127,10 @@ public class methods {
         System.out.println("decimal of " + myNum + " = " + dec);
     }
 
+    
+   
+
+
     public static void main(String[] args) {
         // calculate sum
         Scanner sc = new Scanner(System.in);
